@@ -21,6 +21,8 @@ portfolio/
 ├── style.css                     # Styling, themes and responsive layout
 ├── script.js                     # Theme toggle and copy buttons
 ├── Krish_Ghodasara_Resume.pdf    # Resume used by the download button
+├── favicon.svg / favicon.ico     # Browser tab logo
+├── apple-touch-icon.png          # Home-screen icon on iPhone/iPad
 └── README.md
 ```
 
