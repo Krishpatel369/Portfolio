@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Krish Ghodasara Portfolio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="shell">
+  <header class="side">
+    <div class="id-top">
+      <div class="brand">
+        <img class="logo" src="favicon.svg" alt="KG logo" width="56" height="56">
+        <div>
+          <div class="name">Krish Ghodasara</div>
+          <p class="role">MERN stack developer &middot; DevOps developer</p>
+        </div>
+      </div>
+      <button class="theme-btn" id="theme-toggle" type="button" aria-label="Switch between light and dark theme">Theme</button>
+    </div>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="social">
+      <a href="https://github.com/Krishpatel369" target="_blank" rel="noopener" aria-label="Krish on GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/ghodasara-krish/" target="_blank" rel="noopener" aria-label="Krish on LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+    </div>
+    <dl class="facts">
+      <div><dt>Based in</dt><dd>Ahmedabad, Gujarat, India</dd></div>
+      <div><dt>Speaks</dt><dd>Gujarati, Hindi, English</dd></div>
+    </dl>
+  </header>
+
+  <main>
+    <section class="hero" id="top">
+      <p class="eyebrow">Ahmedabad, Gujarat</p>
+      <h1>I build full stack web apps and ship them with <span class="mark">DevOps</span>.</h1>
+      <p class="lede">I work with <strong>React.js, Node.js, Express.js and MongoDB</strong>. I have interned as a full stack developer and a web developer, and I am studying for a B.Tech in Computer Science Engineering. I am also learning <strong>DevOps</strong>.</p>
+      <div class="code-backdrop" id="code-backdrop" hidden></div>
+      <div class="code" id="code-window" role="group" aria-label="krish.js code window">
+        <div class="code-bar"><button type="button" class="dot" id="dot-close" aria-label="Red button (no action)" title="Close"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.6 2.6l4.8 4.8M7.4 2.6l-4.8 4.8"/></svg></button><button type="button" class="dot" id="dot-min" aria-label="Minimize code window" title="Minimize"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2.4 5h5.2"/></svg></button><button type="button" class="dot" id="dot-max" aria-label="Enlarge code window" title="Enlarge"><svg viewBox="0 0 10 10" aria-hidden="true"><path class="fill" d="M2.6 2.6h3.2L2.6 5.8zM7.4 7.4H4.2l3.2-3.2z"/></svg></button><span>krish.js</span><span class="code-actions"><button type="button" class="code-btn" id="code-reset" hidden>Reset</button><button type="button" class="code-btn" id="code-edit">Edit</button></span></div>
+<pre id="code-pre"><span class="d">const</span> krish = {
+  <span class="k">roles</span>: [
+    <span class="s">"MERN Stack Developer"</span>,
+    <span class="s">"DevOps Developer"</span>
+  ],
+  <span class="k">based</span>: <span class="s">"Ahmedabad, Gujarat"</span>,
+  <span class="k">stack</span>: [<span class="s">"React.js"</span>, <span class="s">"Node.js"</span>, <span class="s">"Express.js"</span>, <span class="s">"MongoDB"</span>],
+  <span class="k">languages</span>: [<span class="s">"JavaScript"</span>, <span class="s">"Python"</span>],
+  <span class="k">internships</span>: <span class="s">2</span>,
+  <span class="k">learning</span>: <span class="s">"DevOps"</span>,
+  <span class="k">studying</span>: <span class="s">"B.Tech CSE, Dr. Subhash University"</span><span class="caret" aria-hidden="true"></span>
+};</pre>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2 class="sec-title">About</h2>
+      <p>I am an aspiring MERN stack developer based in Ahmedabad. My first real project work came at Way To Code Technologies in Ahmedabad, where I built React interfaces, wrote Node and Express API endpoints, and fixed bugs on both sides of the stack.</p>
+      <p>In late 2025 I also worked as a junior bench sales recruiter at Techsara Solutions. That job taught me how to talk to clients and vendors, and how a team gets work to the finish line. I learn quickly, like solving problems, and want to keep growing in the IT industry. Right now I am learning DevOps, so I can take the apps I build all the way to deployment.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="sec-title">Skills</h2>
+      <div class="skills">
+        <div class="skill-row"><h3>Frontend</h3><ul class="chips"><li>HTML5</li><li>CSS3</li><li>JavaScript (ES6+)</li><li>React.js</li></ul></div>
+        <div class="skill-row"><h3>Backend</h3><ul class="chips"><li>Node.js</li><li>Express.js</li><li>RESTful API development</li></ul></div>
+        <div class="skill-row"><h3>Database</h3><ul class="chips"><li>MongoDB</li><li>Mongoose</li></ul></div>
+        <div class="skill-row"><h3>Languages</h3><ul class="chips"><li>JavaScript</li><li>Python</li></ul></div>
+        <div class="skill-row"><h3>Tools</h3><ul class="chips"><li>Visual Studio Code</li><li>Git</li><li>GitHub</li><li>Windows</li><li>Linux</li></ul></div>
+        <div class="skill-row"><h3>Learning</h3><ul class="chips"><li>DevOps</li></ul></div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="sec-title">Experience</h2>
+      <article class="job">
+        <div class="when">11/2025 &ndash; 01/2026<span>Ahmedabad, Gujarat</span></div>
+        <div>
+          <h3>Junior Bench Sales Recruiter</h3>
+          <p class="co">Techsara Solutions</p>
+          <ul class="bullets">
+            <li>Sourced and marketed bench candidates for IT roles, improving client satisfaction and placement success rates by 25%.</li>
+            <li>Coordinated placement opportunities with vendors and hiring managers, streamlining the recruitment lifecycle.</li>
+            <li>Maintained and optimized consultant profiles, increasing visibility and engagement with potential clients.</li>
+            <li>Built strong vendor and client relationships, contributing to repeat business and faster closures.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="when">10/2023 &ndash; 04/2024<span>Ahmedabad, Gujarat</span></div>
+        <div>
+          <h3>Full Stack Developer Intern</h3>
+          <p class="co">Way To Code Technologies LLP</p>
+          <ul class="bullets">
+            <li>Developed and deployed new features for web applications using HTML, CSS, JavaScript and React.js.</li>
+            <li>Built responsive, cross-browser UIs with React.js, reducing page load time by 20%.</li>
+            <li>Contributed to backend development with Node.js and Express, creating RESTful API endpoints for seamless data flow.</li>
+            <li>Troubleshot and resolved frontend and backend bugs, improving application stability by 30%.</li>
+          </ul>
+        </div>
+      </article>
+      <article class="job">
+        <div class="when">11/2023 &ndash; 12/2023<span>Ahmedabad, Gujarat</span></div>
+        <div>
+          <h3>Web Developer Intern</h3>
+          <p class="co">Oasis Infobyte</p>
+          <ul class="bullets">
+            <li>Created responsive web applications with HTML, CSS and JavaScript, improving mobile usability by 40%.</li>
+            <li>Took part in code reviews to keep to quality standards and work well with the team.</li>
+            <li>Assisted with UI/UX improvements on existing projects, increasing user engagement.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2 class="sec-title">Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <h3>Habit &amp; Sleep Tracker</h3>
+          <p class="stack">HTML5 &middot; CSS3 &middot; JavaScript &middot; SVG &middot; jsPDF</p>
+          <p class="plinks"><a href="https://krishpatel369.github.io/habit-tracking-monthly/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/Krishpatel369/habit-tracking-monthly" target="_blank" rel="noopener">Source code</a></p>
+          <ul class="bullets">
+            <li>A monthly tracker for up to 10 daily habits on an SVG ring chart, with a daily check-in flow, live completion percentage and a sleep log with average hours.</li>
+            <li>Runs fully in the browser with no backend, saves data in localStorage, archives each month automatically and exports a one-page A4 PDF.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Daily Habits Tracker</h3>
+          <p class="stack">HTML5 &middot; CSS3 &middot; JavaScript</p>
+          <p class="plinks"><a href="https://krishpatel369.github.io/habit-tracking/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/Krishpatel369/habit-tracking" target="_blank" rel="noopener">Source code</a></p>
+          <ul class="bullets">
+            <li>A mobile-first fitness and habit tracker with daily workouts, habits, steps and drinks, plus week and month summaries.</li>
+            <li>Runs offline in plain JavaScript, saves everything in the browser, and exports PDF reports and JSON or CSV backups.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Restaurant Landing Website</h3>
+          <p class="stack">HTML5 &middot; CSS3 &middot; JavaScript &middot; React.js</p>
+          <p class="plinks"><a href="https://krishpatel369.github.io/Restaurant-Landing-Page/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/Krishpatel369/Restaurant-Landing-Page" target="_blank" rel="noopener">Source code</a></p>
+          <ul class="bullets">
+            <li>Fully responsive landing page with dynamic menu components and an interactive UI.</li>
+            <li>Tuned for mobile and desktop, reaching a 90+ Lighthouse performance score.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Customer Behavior Dashboard</h3>
+          <p class="stack">Python &middot; PostgreSQL &middot; Power BI</p>
+          <p class="plinks"><a href="https://github.com/Krishpatel369/customer_behavior_analysis" target="_blank" rel="noopener">Source code</a></p>
+          <ul class="bullets">
+            <li>Analyzed customer behavior data with Python (Pandas) and PostgreSQL.</li>
+            <li>Built interactive Power BI dashboards showing customer insights and sales trends.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Dynamic Webpages and Virtual Assistant</h3>
+          <p class="stack">React.js &middot; JavaScript &middot; REST APIs</p>
+          <ul class="bullets">
+            <li>Interactive pages built from React components with external API integration.</li>
+            <li>A basic JavaScript virtual assistant with natural language processing features.</li>
+          </ul>
+        </article>
+        <article class="project">
+          <h3>Coffee Shop Multi-page Website</h3>
+          <p class="stack">HTML &middot; CSS &middot; JavaScript</p>
+          <p class="plinks"><a href="https://krishpatel369.github.io/GROUP_10-DSU/" target="_blank" rel="noopener">Live site</a><a href="https://github.com/Krishpatel369/GROUP_10-DSU" target="_blank" rel="noopener">Source code</a></p>
+          <ul class="bullets">
+            <li>A complete business website with product catalogs, contact forms and a simulated admin backend.</li>
+            <li>Responsive design with cross-browser testing.</li>
+          </ul>
+        </article>
+      </div>
+      <p class="more"><a href="https://github.com/Krishpatel369">See the code on GitHub</a></p>
+    </section>
+
+    <section id="education">
+      <h2 class="sec-title">Education</h2>
+      <div class="edu">
+        <div class="edu-row">
+          <div><h3>Dr. Subhash University</h3><p>B.Tech Computer Science Engineering (pursuing)</p></div>
+          <div class="when">2024 &ndash; pursuing</div>
+        </div>
+        <div class="edu-row">
+          <div><h3>Om Engineering College, Junagadh</h3><p>Diploma in Computer Engineering &middot; <b>CGPA 7.72 / 10.0</b></p></div>
+          <div class="when">2019 &ndash; 2024</div>
+        </div>
+        <div class="edu-row">
+          <div><h3>Ultra Secondary School, Keshod</h3><p>Secondary School Certificate (SSC, 10th) &middot; <b>62.08%</b></p></div>
+          <div class="when">2018 &ndash; 2019</div>
+        </div>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3>Certifications</h3>
+          <ul class="plain">
+            <li>MERN Stack Developer, Way To Code Technologies LLP <span class="date">(Oct 2023 &ndash; Apr 2024)</span></li>
+            <li>Web Development and Designing, Oasis Infobyte <span class="date">(Nov 2023 &ndash; Dec 2023)</span></li>
+            <li>Introduction to Cloud Computing, Simplilearn SkillUp <span class="date">(Jun 2025)</span></li>
+            <li>Foundation Course on IR4.0 Technologies, Tech Saksham (Microsoft and Edunet Foundation) <span class="date">(2024 &ndash; 2025)</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Languages</h3>
+          <ul class="plain">
+            <li>English <span>Professional working proficiency</span></li>
+            <li>Gujarati <span>Native proficiency</span></li>
+            <li>Hindi <span>Professional working proficiency</span></li>
+          </ul>
+          <h3 style="margin-top:28px">Off the keyboard</h3>
+          <p class="hobbies"><span class="hobby">Cooking</span>, <span class="hobby">photography</span> and <span class="hobby">travelling</span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <h2 class="sec-title">Resume</h2>
+      <div class="resume-head">
+        <p>Download my resume as a PDF.</p>
+        <a class="btn" id="download-resume" href="Krish_Ghodasara_Resume.pdf" download="Krish_Ghodasara_Resume.pdf">Download resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="sec-title">Contact</h2>
+      <div class="social">
+        <a href="https://github.com/Krishpatel369" target="_blank" rel="noopener" aria-label="Krish on GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.921.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ghodasara-krish/" target="_blank" rel="noopener" aria-label="Krish on LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+      <dl class="contact-grid">
+        <div class="c-row"><dt>Email</dt><dd id="v-email"><a href="mailto:krishpatel09040@gmail.com">krishpatel09040@gmail.com</a></dd><button class="btn ghost" type="button" data-copy="v-email">Copy</button></div>
+        <div class="c-row"><dt>Phone</dt><dd id="v-phone"><a href="tel:+919428776376">+91 94287 76376</a></dd><button class="btn ghost" type="button" data-copy="v-phone">Copy</button></div>
+        <div class="c-row"><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/ghodasara-krish/" target="_blank" rel="noopener">linkedin.com/in/ghodasara-krish</a></dd><span></span></div>
+        <div class="c-row"><dt>GitHub</dt><dd><a href="https://github.com/Krishpatel369">github.com/Krishpatel369</a></dd><span></span></div>
+        <div class="c-row"><dt>Location</dt><dd>Ahmedabad, Gujarat, India</dd><span></span></div>
+      </dl>
+    </section>
+  </main>
+</div>
+<footer class="shell" style="display:block;max-width:1160px;margin-inline:auto">© 2026 Krish Ghodasara</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script src="script.js"></script>
+</body>
+</html>
